@@ -12,12 +12,12 @@ const featuredDishes = [
   {
     name: 'Barbacoa Plate',
     desc: 'Slow-cooked and served with beans & pico',
-    img: '/Napoles.jpg',
+    img: '/Barbacoa%20Plate.png',
   },
   {
     name: 'Guiso de Puerco',
     desc: 'Mexican pork stew in green or red sauce',
-    img: '/enchiladas.jpg',
+    img: '/Guiso%20de%20Puerco.png',
   },
   {
     name: 'Top Shelf Margarita',
@@ -30,8 +30,8 @@ const featuredDishes = [
     img: '/Steak.jpg',
   },
   {
-    name: 'Chicken San Luis',
-    desc: 'Marinated chicken breast with ranchero sauce',
+    name: 'Tacos al Pastor',
+    desc: 'Seasoned pork tacos with onion, cilantro & fresh salsa',
     img: '/Pastor_Tacos.jpg',
   },
 ];
