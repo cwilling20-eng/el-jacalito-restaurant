@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+  }
+
+  body {
+    @apply bg-sand-100 text-bark-800;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Alfa Slab One', serif;
+  }
+}
+
+@layer components {
+  .section-script {
+    font-family: 'Pacifico', cursive;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3 bg-chili-500 text-white font-bold rounded-lg
+      transition-all duration-300 hover:bg-chili-600 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-3 border-2 border-white text-white font-bold rounded-lg
+      transition-all duration-300 hover:bg-white hover:text-bark-800 active:translate-y-0;
+  }
+
+  .talavera-border {
+    background-image: repeating-linear-gradient(
+      90deg,
+      #C0392B 0px,
+      #C0392B 8px,
+      transparent 8px,
+      transparent 16px,
+      #D4A843 16px,
+      #D4A843 24px,
+      transparent 24px,
+      transparent 32px,
+      #2C7A5E 32px,
+      #2C7A5E 40px,
+      transparent 40px,
+      transparent 48px
+    );
+    height: 3px;
+  }
+}
+
+@layer utilities {
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: 768px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+}
